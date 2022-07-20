@@ -72,7 +72,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            # Выполняет pull образа с Docker Hub 
+            # Выполняет pull образа с DockerHub 
             sudo docker pull ivan1988/docker_repo
             #остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)

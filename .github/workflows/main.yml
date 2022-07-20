@@ -41,7 +41,7 @@ jobs:
   build_and_push_to_docker_hub:
     name: Build image and Push Docker image to Docker Hub
     runs-on: ubuntu-latest
-    needs: build_image
+    needs: tests
     steps:
       - name: docker build
         run: | 
